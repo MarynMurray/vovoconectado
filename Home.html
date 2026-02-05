@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Store Header</title>
+  <link rel="stylesheet" href="Css/Home.css">
+</head>
+<body>
+
+
+<!--Cabeçalho-->
+
+<header class="cabecalho">
+  <div class="cabecalho-superior">
+    <div class="logo-do-site">
+      <img src="img/img-home/logo-vovo.png" alt="Logo" class="logo-img">
+      <img src="img/img-home/letreiro.png" alt="Logo" class="letreiro-logo">
+    </div>
+    <nav class="menu">
+      <a href="Home.html">Início</a>
+      <a href="#">Suporte</a>
+      <a href="Sobre%20nos.html">Sobre Nós</a>
+    </nav>
+    <div class="altenticacao">
+      <a href="Contato.html" class="entrar-btn">Contato</a>
+      <a href="https://seusite.com/download.pdf" class="download-btn" target="_blank">Download</a>
+    </div>
+  </div>
+
+  <!-- Linha colorida -->
+  <div class="color-lines">
+    <div class="verde"></div>
+  </div>
+
+
+
+  <div class="cabecalho-inferior">
+    <nav class="menu-2">
+      <img src="img/img-home/facebook.png" alt="Icone do Facebook" class="logo-img">
+      <a href="Facebook.html">Facebook</a>
+      <img src="img/img-home/instagram.png" alt="Icone do Instagram" class="logo-img">
+      <a href="Instagram.html">Instagram</a>
+      <img src="img/img-home/whatsapp.png" alt="Icone do Whatsapp" class="logo-img">
+      <a href="Whatsapp.html">Whatsapp</a>
+      <img src="img/img-home/banco.png" alt="Icone do Banco" class="logo-img">
+      <a href="BancoDigital.html">Banco</a>
+      <img src="img/img-home/configuracoes.png" alt="Icone do Configurações" class="logo-img">
+      <a href="Configuracoes.html">Configurações</a>
+    </nav>
+    <div class="pesquisar">
+      <input type="text" placeholder="Pesquisar..." />
+    </div>
+  </div>
+
+</header>
+
+
+<!--Banner/Carrossel-->
+
+<div class="slider-container">
+  <div class="slider-wrapper" id="slider">
+    <div class="slide"><img src="img/img-home/banner1.png" alt="Banner 1" /></div>
+    <div class="slide"><img src="img/img-home/banner2.png" alt="Banner 2" /></div>
+    <div class="slide"><img src="img/img-home/banner3.png" alt="Banner 3" /></div>
+  </div>
+</div>
+
+<script>
+  const slider = document.getElementById('slider');
+  const slides = slider.querySelectorAll('.slide');
+  let index = 0;
+
+  function nextSlide() {
+    index = (index + 1) % slides.length;
+    slider.style.transform = `translateX(-${index * 100}%)`;
+  }
+
+  setInterval(nextSlide, 5000);
+</script>
+
+<section class="aplicativos">
+  <br>
+  <br>
+  <br>
+  <div class="apps-container">
+
+    <a href="Instagram.html" target="_blank" class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram">
+      <span>Instagram</span>
+    </a>
+
+    <a href="Facebook.html" target="_blank" class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+      <span>Facebook</span>
+    </a>
+
+    <a href="Whatsapp.html" target="_blank" class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+      <span>WhatsApp</span>
+    </a>
+
+    <a href="BancoDigital.html" class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135706.png" alt="Banco">
+      <span>Banco</span>
+    </a>
+
+    <a href="Configuracoes.html" class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/2099/2099058.png" alt="Configurações">
+      <span>Configurações</span>
+    </a>
+
+  </div>
+  <br>
+  <br>
+  <br>
+</section>
+
+
+
+<!--Sobre nós-->
+
+
+<section class="sobre-nos-home">
+  <div class="container">
+    <div class="texto">
+      <h2>Sobre Nós</h2>
+      <p>Somos uma equipe apaixonada por transformar ideias em soluções. Nossa missão é criar experiências inovadoras com tecnologia e empatia.</p>
+      <a href="Sobre nos.html" class="btn-saiba-mais">Saiba mais</a>
+    </div>
+    <div class="imagem">
+      <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad" alt="Sobre Nós">
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Script do VLibras -->
+
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget();
+</script>
+
+
+</body>
+</html>

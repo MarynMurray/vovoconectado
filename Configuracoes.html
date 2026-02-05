@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Configurações do Celular</title>
+  <link rel="stylesheet" href="Css/Configuracoes.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+<!--Cabeçalho-->
+
+<header class="cabecalho">
+  <div class="cabecalho-superior">
+    <div class="logo-do-site">
+      <img src="img/img-home/logo-vovo.png" alt="Logo" class="logo-img">
+      <img src="img/img-home/letreiro.png" alt="Logo" class="letreiro-logo">
+    </div>
+    <nav class="menu">
+      <a href="Home.html">Início</a>
+      <a href="#">Suporte</a>
+      <a href="Sobre%20nos.html">Sobre Nós</a>
+    </nav>
+    <div class="altenticacao">
+      <a href="Contato.html" class="entrar-btn">Contato</a>
+      <a href="https://seusite.com/download.pdf" class="download-btn" target="_blank">Download</a>
+    </div>
+  </div>
+
+  <!-- Linha colorida -->
+  <div class="color-lines">
+    <div class="verde"></div>
+  </div>
+
+
+
+  <div class="cabecalho-inferior">
+    <nav class="menu-2">
+      <img src="img/img-home/facebook.png" alt="Icone do Facebook" class="logo-img">
+      <a href="Facebook.html">Facebook</a>
+      <img src="img/img-home/instagram.png" alt="Icone do Instagram" class="logo-img">
+      <a href="Instagram.html">Instagram</a>
+      <img src="img/img-home/whatsapp.png" alt="Icone do Whatsapp" class="logo-img">
+      <a href="Whatsapp.html">Whatsapp</a>
+      <img src="img/img-home/banco.png" alt="Icone do Banco" class="logo-img">
+      <a href="BancoDigital.html">Banco</a>
+      <img src="img/img-home/configuracoes.png" alt="Icone do Configurações" class="logo-img">
+      <a href="Configuracoes.html">Configurações</a>
+    </nav>
+    <div class="pesquisar">
+      <input type="text" placeholder="Pesquisar..." />
+    </div>
+  </div>
+
+</header>
+
+
+<section class="secao1">
+  <h1>Configurações do Celular</h1>
+  <p>Aprenda a ajustar as principais configurações do seu smartphone</p>
+</section>
+
+<div class="tabs">
+  <button class="tab-btn active" onclick="mudarTab(0)">
+    <i class="fas fa-book-reader"></i> Texto e Vídeo
+  </button>
+  <button class="tab-btn" onclick="mudarTab(1)">
+    <i class="fas fa-cogs"></i> Tutorial com Imagens
+  </button>
+</div>
+
+<div class="container">
+  <div class="slider" id="slider">
+
+    <!-- Tab 1: Texto e Vídeo -->
+    <div class="tab-content1">
+      <div class="secao">
+        <h2>Explicação em Texto</h2>
+        <p>Veja como ajustar configurações importantes do seu celular para deixá-lo mais seguro e fácil de usar.</p>
+      </div>
+      <div class="secao">
+        <h2>Vídeo Tutorial</h2>
+        <p>Assista ao vídeo com o passo a passo completo:</p>
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/kx2QXsZKUgA" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!-- Tab 2: Tutorial com Imagens -->
+    <div class="tab-content">
+
+      <div class="secao">
+        <h2><i class="fas fa-lock icone"></i>1. Segurança</h2>
+        <div class="conteudo">
+          <img src="https://via.placeholder.com/280x500?text=Configurações+de+Segurança" alt="Segurança">
+          <div class="texto">
+            <p>Acesse <strong>Configurações &gt; Segurança</strong> para ativar bloqueio de tela, biometria ou senha PIN.</p>
+            <div class="destaque">🔒 Recomendado: Use biometria ou senha para proteger seus dados.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="secao">
+        <h2><i class="fas fa-ambulance icone"></i>2. Emergência</h2>
+        <div class="conteudo">
+          <div class="texto">
+            <p>Em <strong>Segurança &gt; Informações de emergência</strong>, adicione contatos médicos e informações de saúde.</p>
+            <div class="destaque">🚨 Pode salvar vidas em caso de acidente.</div>
+          </div>
+          <img src="https://via.placeholder.com/280x500?text=Informações+de+Emergência" alt="Informações de emergência">
+        </div>
+      </div>
+
+      <div class="secao">
+        <h2><i class="fas fa-volume-up icone"></i>3. Luz e Som</h2>
+        <div class="conteudo">
+          <img src="https://via.placeholder.com/280x500?text=Brilho+e+Som" alt="Brilho e Som">
+          <div class="texto">
+            <p>Em <strong>Configurações &gt; Tela</strong> você ajusta o brilho. Em <strong>Som</strong>, mude volume, toques e notificações.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="secao">
+        <h2><i class="fas fa-text-height icone"></i>4. Aumentar Letra/Fonte</h2>
+        <div class="conteudo">
+          <div class="texto">
+            <p>Vá em <strong>Configurações &gt; Tela &gt; Tamanho da fonte</strong>. Aumente para facilitar a leitura.</p>
+            <div class="destaque">🔎 Ideal para quem tem dificuldade visual.</div>
+          </div>
+          <img src="https://via.placeholder.com/280x500?text=Aumentar+Fonte" alt="Aumentar Fonte">
+        </div>
+      </div>
+
+      <div class="secao">
+        <h2><i class="fas fa-expand icone"></i>5. Ampliar Aplicativos</h2>
+        <div class="conteudo">
+          <img src="https://via.placeholder.com/280x500?text=Ampliar+Aplicativos" alt="Ampliar Aplicativos">
+          <div class="texto">
+            <p>Em <strong>Acessibilidade &gt; Ampliação</strong> ou <strong>Ampliar conteúdo</strong>, ative gestos para dar zoom em qualquer app.</p>
+            <div class="destaque">🤏 Use três toques ou o gesto de pinça para ampliar.</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  &copy; 2025 - Guia de Configurações. Criado com fins educacionais.
+</footer>
+
+<script>
+  function mudarTab(indice) {
+    const slider = document.getElementById('slider');
+    const buttons = document.querySelectorAll('.tab-btn');
+    slider.style.transform = `translateX(-${indice * 100}%)`;
+    buttons.forEach((btn, i) => {
+      btn.classList.toggle('active', i === indice);
+    });
+  }
+</script>
+
+<!-- Script do VLibras -->
+
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget();
+</script>
+
+</body>
+</html>

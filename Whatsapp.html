@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Como Funciona o WhatsApp</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Css/Whatsapp.css"/>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!--Cabeçalho-->
+
+<header class="cabecalho">
+  <div class="cabecalho-superior">
+    <div class="logo-do-site">
+      <img src="img/img-home/logo-vovo.png" alt="Logo" class="logo-img">
+      <img src="img/img-home/letreiro.png" alt="Logo" class="letreiro-logo">
+    </div>
+    <nav class="menu">
+      <a href="Home.html">Início</a>
+      <a href="#">Suporte</a>
+      <a href="Sobre%20nos.html">Sobre Nós</a>
+    </nav>
+    <div class="altenticacao">
+      <a href="Contato.html" class="entrar-btn">Contato</a>
+      <a href="https://seusite.com/download.pdf" class="download-btn" target="_blank">Download</a>
+    </div>
+  </div>
+
+  <!-- Linha colorida -->
+  <div class="color-lines">
+    <div class="verde"></div>
+  </div>
+
+
+
+  <div class="cabecalho-inferior">
+    <nav class="menu-2">
+      <img src="img/img-home/facebook.png" alt="Icone do Facebook" class="logo-img">
+      <a href="Facebook.html">Facebook</a>
+      <img src="img/img-home/instagram.png" alt="Icone do Instagram" class="logo-img">
+      <a href="Instagram.html">Instagram</a>
+      <img src="img/img-home/whatsapp.png" alt="Icone do Whatsapp" class="logo-img">
+      <a href="Whatsapp.html">Whatsapp</a>
+      <img src="img/img-home/banco.png" alt="Icone do Banco" class="logo-img">
+      <a href="BancoDigital.html">Banco</a>
+      <img src="img/img-home/configuracoes.png" alt="Icone do Configurações" class="logo-img">
+      <a href="Configuracoes.html">Configurações</a>
+    </nav>
+    <div class="pesquisar">
+      <input type="text" placeholder="Pesquisar..." />
+    </div>
+  </div>
+
+</header>
+
+<section class="secao1">
+  <h1>Como Funciona o WhatsApp</h1>
+  <p>Aprenda a usar o WhatsApp diretamente pelo navegador do seu celular</p>
+</section>
+
+<div class="tabs">
+  <button class="tab-btn active" onclick="mudarTab(0)">
+    <i class="fas fa-book-open"></i> Texto e Vídeo
+  </button>
+  <button class="tab-btn" onclick="mudarTab(1)">
+    <i class="fas fa-image"></i> Tutorial com Imagens
+  </button>
+</div>
+
+<div class="container">
+  <div class="slider" id="slider">
+
+    <!-- Tab 1: Texto e Vídeo -->
+    <div class="tab-content1">
+      <div class="secao">
+        <h2>Explicação em Texto</h2>
+        <p>Você pode usar o WhatsApp no navegador do seu celular sem instalar o aplicativo. Abaixo, explicamos como fazer isso.</p>
+      </div>
+      <div class="secao">
+        <h2>Vídeo Explicativo</h2>
+        <p>Assista ao vídeo abaixo para acompanhar o passo a passo:</p>
+        <video width="100%" height="315" controls>
+          <source src="img/videos-apps/tutorial-whatsapp.mp4" type="video/mp4">
+          Seu navegador não suporta o elemento de vídeo.
+        </video>
+      </div>
+    </div>
+
+    <!-- Tab 2: Tutorial com Imagens -->
+    <div class="tab-content">
+      <div class="secao">
+        <h2><i class="fas fa-globe icone"></i>1. Baixe seu aplicativo WhatsApp e crie sua conta</h2>
+        <div class="conteudo">
+          <img src="img/img-whatsapp/1.png" alt="Acessar WhatsApp">
+          <div class="texto">
+            <p>Para baixar o WhatsApp em um celular Android, primeiro é necessário abrir a Google Play Store, que é a loja oficial de aplicativos do sistema. Assim que estiver na Play Store, digite “WhatsApp Messenger” na barra de busca localizada na parte superior da tela. Quando os resultados aparecerem, procure pelo aplicativo oficial desenvolvido pela "WhatsApp LLC", que tem o ícone verde com um telefone branco dentro de um balão de conversa. Toque no botão “Instalar” e aguarde o download e a instalação serem concluídos. Depois disso, você pode abrir o aplicativo diretamente pela Play Store, tocando em “Abrir”, ou localizar o ícone do WhatsApp na tela inicial do seu celular.
+
+              Ao abrir o WhatsApp pela primeira vez, você verá uma tela de boas-vindas com um botão para continuar. Toque em “Concordar e continuar” para aceitar os termos de uso. Em seguida, será solicitado que você informe seu número de telefone com o DDD. Após inserir o número, toque em “Avançar” e confirme se ele está correto. Você receberá um código de verificação por SMS. Quando o código chegar, ele será preenchido automaticamente ou você poderá digitá-lo manualmente. Depois disso, o WhatsApp irá configurar sua conta. Você poderá adicionar seu nome e, se quiser, uma foto de perfil. Finalizada essa parte, o aplicativo estará pronto para uso, e você será direcionado à tela principal onde pode começar a conversar com seus contatos.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="secao">
+        <h2><i class="fas fa-qrcode icone"></i>2.Página Inicial</h2>
+        <div class="conteudo">
+          <div class="texto">
+            <p>Quando você abre o WhatsApp, a primeira coisa que aparece é a tela principal do app, que geralmente mostra três abas no topo: Conversas, Status e Chamadas. Por padrão, você já cai na aba de Conversas, onde aparecem todas as suas conversas recentes, tanto individuais quanto em grupo. Cada conversa mostra o nome do contato ou grupo, uma prévia da última mensagem enviada ou recebida, e o horário da última atividade. Se alguém te enviou uma mensagem e você ainda não leu, ela aparece em negrito, muitas vezes com um contador de mensagens não lidas.
+              Na parte inferior da tela (ou superior, dependendo do celular), tem o botão para iniciar uma nova conversa, que dá acesso à sua lista de contatos. Já no canto superior da tela, você encontra ícones para acessar a câmera, fazer pesquisas rápidas nas conversas, ver os três pontinhos de menu, onde estão opções como configurações, mensagens favoritas, novo grupo e mais.</p>
+          </div>
+          <img src="https://via.placeholder.com/280x500?text=Escanear+QR+Code" alt="Escanear QR Code">
+        </div>
+      </div>
+
+      <div class="secao">
+        <h2><i class="fas fa-comments icone"></i>3. Enviando Mensagens</h2>
+        <div class="conteudo">
+          <img src="https://via.placeholder.com/280x500?text=Conversa+WhatsApp" alt="Conversa no WhatsApp">
+          <div class="texto">
+            <p>Primeiro, abra o WhatsApp. Na tela inicial (a aba de Conversas), você verá todas as conversas que já tem. Se quiser mandar mensagem para alguém com quem já falou, é só tocar no nome da pessoa ou grupo, digitar no campo de texto lá embaixo e apertar o botão de enviar (o ícone de seta verde).
+              Se for uma nova conversa, toque no botão de mensagem (ícone de balão com lápis ou sinal de +, dependendo do modelo do celular), escolha um contato da sua lista, e a tela de conversa vai abrir. Aí é só digitar sua mensagem e enviar.
+              Você também pode mandar áudios (tocando e segurando o microfone), imagens, vídeos, documentos, localização ou até criar enquetes — tudo isso tocando no ícone de clipe de papel que aparece dentro da conversa.
+              Ah, e se quiser mandar emojis, figurinhas ou GIFs, tem o ícone de carinha sorrindo ali ao lado do campo de digitação 😊</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="secao">
+        <h2><i class="fas fa-camera icone"></i>4. Enviar Imagens ou Arquivos</h2>
+        <div class="conteudo">
+          <div class="texto">
+            <p>Para enviar imagens ou arquivos no WhatsApp, primeiro você precisa abrir o aplicativo e entrar na conversa com a pessoa ou grupo para quem deseja mandar o conteúdo. Na parte de baixo da tela, perto da área onde você digita as mensagens, há um ícone de clipe de papel. Ao tocar nesse ícone, surgem algumas opções, como enviar imagens da galeria, tirar uma foto com a câmera, anexar documentos, compartilhar sua localização ou até mesmo enviar um contato da sua agenda. Se você quiser mandar uma foto ou vídeo que já está salvo no seu celular, escolha a opção “Galeria” e selecione os arquivos desejados. Caso queira enviar um documento, como um PDF ou um arquivo do Word, selecione a opção “Documento” e localize o arquivo no seu aparelho. Depois de escolher o que deseja enviar, basta tocar no botão de envio, que geralmente é uma setinha verde, e o conteúdo será compartilhado com o contato ou grupo escolhido. Tudo acontece em poucos segundos, de forma prática e rápida.</p>
+          </div>
+          <img src="https://via.placeholder.com/280x500?text=Enviar+Arquivos" alt="Enviar arquivos no WhatsApp">
+        </div>
+      </div>
+
+      <div class="secao">
+        <h2><i class="fas fa-user-circle icone"></i>5. Perfil e Configurações</h2>
+        <div class="conteudo">
+          <img src="https://via.placeholder.com/280x500?text=Perfil+WhatsApp" alt="Perfil WhatsApp">
+          <div class="texto">
+            <p>No perfil, você pode ver e editar seu nome, sua foto de perfil, seu recado (aquele status curto, tipo “Disponível” ou “Ocupado”) e seu número de telefone. Já nas configurações, dá pra ajustar coisas como privacidade (quem pode ver seu status, foto, visto por último), notificações, conversas (como backup e aparência), armazenamento e uso de dados, além de acessar ferramentas da conta como verificação em duas etapas, mudar o número ou excluir a conta.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  &copy; 2025 - Tutorial WhatsApp. Criado para fins educacionais.
+</footer>
+
+<script>
+  function mudarTab(indice) {
+    const slider = document.getElementById('slider');
+    const buttons = document.querySelectorAll('.tab-btn');
+    slider.style.transform = `translateX(-${indice * 100}%)`;
+
+    buttons.forEach((btn, i) => {
+      btn.classList.toggle('active', i === indice);
+    });
+  }
+</script>
+
+<!-- Script do VLibras -->
+
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget();
+</script>
+
+</body>
+</html>

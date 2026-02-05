@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Como Funciona o Instagram</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Css/Instagram.css"/>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!--Cabeçalho-->
+
+<header class="cabecalho">
+    <div class="cabecalho-superior">
+        <div class="logo-do-site">
+            <img src="img/img-home/logo-vovo.png" alt="Logo" class="logo-img">
+            <img src="img/img-home/letreiro.png" alt="Logo" class="letreiro-logo">
+        </div>
+        <nav class="menu">
+            <a href="Home.html">Início</a>
+            <a href="#">Suporte</a>
+            <a href="Sobre%20nos.html">Sobre Nós</a>
+        </nav>
+        <div class="altenticacao">
+            <a href="Contato.html" class="entrar-btn">Contato</a>
+            <a href="https://seusite.com/download.pdf" class="download-btn" target="_blank">Download</a>
+        </div>
+    </div>
+
+    <!-- Linha colorida -->
+    <div class="color-lines">
+        <div class="verde"></div>
+    </div>
+
+
+
+    <div class="cabecalho-inferior">
+        <nav class="menu-2">
+            <img src="img/img-home/facebook.png" alt="Icone do Facebook" class="logo-img">
+            <a href="Facebook.html">Facebook</a>
+            <img src="img/img-home/instagram.png" alt="Icone do Instagram" class="logo-img">
+            <a href="Instagram.html">Instagram</a>
+            <img src="img/img-home/whatsapp.png" alt="Icone do Whatsapp" class="logo-img">
+            <a href="Whatsapp.html">Whatsapp</a>
+            <img src="img/img-home/banco.png" alt="Icone do Banco" class="logo-img">
+            <a href="BancoDigital.html">Banco</a>
+            <img src="img/img-home/configuracoes.png" alt="Icone do Configurações" class="logo-img">
+            <a href="Configuracoes.html">Configurações</a>
+        </nav>
+        <div class="pesquisar">
+            <input type="text" placeholder="Pesquisar..." />
+        </div>
+    </div>
+
+</header>
+
+
+
+<section class="secao1">
+    <h1>Como Funciona o Instagram</h1>
+    <p>Escolha como deseja aprender a usar o Instagram pelo celular</p>
+</section>
+
+<div class="tabs">
+    <button class="tab-btn active" onclick="mudarTab(0)">
+        <i class="fas fa-book-open"></i> Texto e Vídeo
+    </button>
+    <button class="tab-btn" onclick="mudarTab(1)">
+        <i class="fas fa-image"></i> Tutorial com Imagens
+    </button>
+</div>
+
+<div class="container">
+    <div class="slider" id="slider">
+
+        <!-- Tab 1: Texto e Vídeo -->
+        <div class="tab-content1">
+            <div class="secao">
+                <h2>Explicação em Texto</h2>
+                <p>Nesta seção, explicamos passo a passo como acessar e usar o Instagram pelo navegador do seu celular.</p>
+            </div>
+            <div class="secao">
+                <h2>Vídeo Explicativo: tutorial completo</h2>
+                <p>Assista ao vídeo abaixo para acompanhar o processo:</p>
+                <video width="100%" height="315" controls>
+                    <source src="img/videos-apps/tutorial-instagram.mp4" type="video/mp4">
+                    Seu navegador não suporta o elemento de vídeo.
+                </video>
+            </div>
+        </div>
+
+        <!-- Tab 2: Tutorial com Imagens -->
+        <div class="tab-content">
+            <div class="secao">
+                <h2><i class="fas fa-sign-in-alt icone"></i>1. Acesso e Login</h2>
+                <div class="conteudo">
+                    <img src="img/img-instagram/passo1.png" alt="Tela de login Instagram">
+                    <div class="texto">
+                        <p>Para começar a usar o Instagram, o primeiro passo é baixar o aplicativo. Acesse a Play Store (para dispositivos Android) ou a App Store (para iPhones), procure por “Instagram” e toque em “Instalar”. Após a instalação, abra o aplicativo tocando em seu ícone.
+
+                            Se você ainda não possui uma conta, é possível criar uma nova de forma simples. Na tela inicial, selecione a opção “Criar nova conta”. Você poderá escolher se deseja se registrar com um número de telefone ou um e-mail. Após digitar suas informações, toque em “Avançar” e informe seu nome completo, criando também uma senha segura. Em seguida, você escolherá um nome de usuário (aquele que aparece depois do “@”), poderá adicionar uma foto de perfil e, por fim, tocar em “Avançar” para concluir o processo.
+
+                            Se já tiver uma conta, basta tocar em “Fazer login”. Depois, insira seu nome de usuário, e-mail ou telefone, junto com a senha, e toque em “Entrar”. Você será direcionado para a sua conta pessoal, onde poderá começar a explorar o conteúdo e interagir com outras pessoas.
+
+                            Caso tenha esquecido a senha, há a opção “Esqueceu a senha?”, que permite a recuperação dos dados de acesso. Para maior segurança, é recomendado ativar a verificação em duas etapas nas configurações do aplicativo.
+
+                            O Instagram também oferece a possibilidade de vincular a conta ao Facebook, facilitando o login e o compartilhamento de conteúdo entre as plataformas.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="secao">
+                <h2><i class="fas fa-home icone"></i>2. Página Inicial</h2>
+                <div class="conteudo">
+                    <div class="texto">
+                        <p>A página inicial do Instagram é o lugar onde tudo começa assim que você abre o app. É ali que você vê as publicações mais recentes das pessoas que segue e também descobre novos perfis e conteúdos que podem te interessar. Logo no topo, ficam os Stories, que são fotos e vídeos rápidos que somem em 24 horas. Se tiver um círculo colorido em volta, é sinal de que tem novidade pra você ver. Rolando a tela, você encontra o feed, onde aparecem as fotos, vídeos e carrosséis postados por quem você acompanha. Você pode curtir, comentar, compartilhar e até salvar essas publicações. De vez em quando, o Instagram também te mostra sugestões de outros perfis, com base no que você costuma curtir. </p>
+                        <div class="destaque">
+                            📌 Dica: deslize para cima ou para o lado para explorar mais posts.
+                        </div>
+                    </div>
+                    <img src="img/img-instagram/passo2.webp" alt="Feed do Instagram">
+                </div>
+            </div>
+
+            <div class="secao">
+                <h2><i class="fas fa-plus-square icone"></i>3. Nova Publicação</h2>
+                <div class="conteudo">
+                    <img src="https://via.placeholder.com/280x500?text=Nova+Publica%C3%A7%C3%A3o" alt="Nova publicação Instagram">
+                    <div class="texto">
+                        <p>Para fazer uma nova publicação no Instagram, você só precisa abrir o aplicativo e tocar no ícone de "+" que aparece no centro inferior da tela ou no canto superior direito. Em seguida, escolha a opção "Publicar". Depois disso, você pode selecionar uma foto ou vídeo da sua galeria, ou tirar algo na hora mesmo. Quando a imagem estiver escolhida, dá pra editar usando filtros, ajustar o brilho, cortar ou deixar do jeito que preferir. Depois, é só tocar em "Avançar", escrever uma legenda, marcar alguém se quiser, colocar a localização e então tocar em "Compartilhar" para postar no seu feed.
+
+                            Se quiser postar um story, o processo também é simples. Basta abrir o Instagram e tocar na sua foto com o símbolo de “+” no canto superior esquerdo da tela, ou então deslizar o dedo para a direita. A câmera vai abrir e você pode tirar uma foto, gravar um vídeo ou puxar algo da sua galeria. Depois disso, é só personalizar como quiser, usando textos, músicas, figurinhas, filtros e outras ferramentas que o Instagram oferece. Quando tudo estiver pronto, é só tocar em “Seu story” para publicar e pronto, ele vai ficar disponível por 24 horas para seus seguidores verem.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="secao">
+                <h2><i class="fas fa-search icone"></i>4. Explorar e Buscar</h2>
+                <div class="conteudo">
+                    <div class="texto">
+                        <p>Para usar a aba de buscar e explorar no Instagram, é só abrir o aplicativo e tocar no ícone da lupa que fica na parte inferior da tela. Assim que você entra nessa aba, já aparecem várias sugestões de conteúdos baseadas no que você costuma curtir e interagir, como fotos, vídeos, Reels e até perfis que podem te interessar. Se quiser procurar algo específico, é só tocar na barra de pesquisa no topo da tela e digitar o que está procurando, seja um nome de usuário, hashtag, lugar ou assunto. O Instagram vai te mostrar resultados organizados por tipo, como contas, áudios, tags ou locais. Você pode explorar livremente por ali, assistindo vídeos, curtindo publicações e até descobrindo novos criadores. Essa aba é perfeita pra quem quer sair um pouco do que já segue e encontrar novidades dentro da plataforma.</p>
+                    </div>
+                    <img src="https://via.placeholder.com/280x500?text=Busca+Instagram" alt="Busca e explorar Instagram">
+                </div>
+            </div>
+
+            <div class="secao">
+                <h2><i class="fas fa-user icone"></i>5. Perfil e Configurações</h2>
+                <div class="conteudo">
+                    <img src="https://via.placeholder.com/280x500?text=Perfil+Instagram" alt="Perfil Instagram">
+                    <div class="texto">
+                        <p>Toque no ícone de perfil para ver suas fotos, editar informações ou acessar <strong>configurações da conta</strong>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    &copy; 2025 - Explicativo Instagram. Criado para fins educacionais.
+</footer>
+
+<script>
+    function mudarTab(indice) {
+        const slider = document.getElementById('slider');
+        const buttons = document.querySelectorAll('.tab-btn');
+        slider.style.transform = `translateX(-${indice * 100}%)`;
+
+        buttons.forEach((btn, i) => {
+            btn.classList.toggle('active', i === indice);
+        });
+    }
+</script>
+
+<!-- Script do VLibras -->
+
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+    </div>
+</div>
+
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+    new window.VLibras.Widget();
+</script>
+
+</body>
+</html>

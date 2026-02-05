@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Guia de Bancos Digitais</title>
+  <link rel="stylesheet" href="Css/BancoDigital.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!--Cabeçalho-->
+
+<header class="cabecalho">
+  <div class="cabecalho-superior">
+    <div class="logo-do-site">
+      <img src="img/img-home/logo-vovo.png" alt="Logo" class="logo-img">
+      <img src="img/img-home/letreiro.png" alt="Logo" class="letreiro-logo">
+    </div>
+    <nav class="menu">
+      <a href="Home.html">Início</a>
+      <a href="#">Suporte</a>
+      <a href="Sobre%20nos.html">Sobre Nós</a>
+    </nav>
+    <div class="altenticacao">
+      <a href="Contato.html" class="entrar-btn">Contato</a>
+      <a href="https://seusite.com/download.pdf" class="download-btn" target="_blank">Download</a>
+    </div>
+  </div>
+
+  <!-- Linha colorida -->
+  <div class="color-lines">
+    <div class="verde"></div>
+  </div>
+
+
+
+  <div class="cabecalho-inferior">
+    <nav class="menu-2">
+      <img src="img/img-home/facebook.png" alt="Icone do Facebook" class="logo-img">
+      <a href="Facebook.html">Facebook</a>
+      <img src="img/img-home/instagram.png" alt="Icone do Instagram" class="logo-img">
+      <a href="Instagram.html">Instagram</a>
+      <img src="img/img-home/whatsapp.png" alt="Icone do Whatsapp" class="logo-img">
+      <a href="Whatsapp.html">Whatsapp</a>
+      <img src="img/img-home/banco.png" alt="Icone do Banco" class="logo-img">
+      <a href="BancoDigital.html">Banco</a>
+      <img src="img/img-home/configuracoes.png" alt="Icone do Configurações" class="logo-img">
+      <a href="Configuracoes.html">Configurações</a>
+    </nav>
+    <div class="pesquisar">
+      <input type="text" placeholder="Pesquisar..." />
+    </div>
+  </div>
+
+</header>
+
+<section class="secao1">
+  <h1>Como Usar Aplicativos de Bancos Digitais</h1>
+  <p>Aprenda a mexer nos apps como Nubank, Banco Inter, C6, entre outros.</p>
+</section>
+
+<div class="tabs">
+  <button class="tab-btn active" onclick="mudarTab(0)">
+    <i class="fas fa-book-reader"></i> Texto e Vídeo
+  </button>
+  <button class="tab-btn" onclick="mudarTab(1)">
+    <i class="fas fa-mobile-alt"></i> Tutorial com Imagens
+  </button>
+</div>
+
+<div class="container">
+  <div class="slider" id="slider">
+
+    <!-- Tab 1: Texto e Vídeo -->
+    <div class="tab-content1">
+      <div class="secao">
+        <h2>Explicação em Texto</h2>
+        <p>Bancos digitais funcionam via aplicativo. Você pode ver seu saldo, fazer Pix, pagar contas e muito mais.</p>
+        <ul>
+          <li>✅ Acesso com senha ou biometria</li>
+          <li>✅ Visualização de saldo e extrato</li>
+          <li>✅ Transferências Pix instantâneas</li>
+          <li>✅ Pagamento de boletos</li>
+          <li>✅ Uso de cartão virtual para compras online</li>
+        </ul>
+      </div>
+      <div class="secao">
+        <h2>Vídeo Tutorial</h2>
+        <p>Assista a um guia prático com exemplos reais:</p>
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/WLGE-m2QHzg" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!-- Tab 2: Tutorial com Imagens -->
+    <div class="tab-content">
+
+      <div class="secao">
+        <h2><i class="fas fa-sign-in-alt icone"></i>1. Entrando no app</h2>
+        <div class="conteudo">
+          <img src="https://via.placeholder.com/280x500?text=Login+no+app+do+banco" alt="Entrar no app">
+          <div class="texto">
+            <p>Abra o aplicativo e entre com sua senha ou digital. É seguro e rápido.</p>
+            <div class="destaque">🔐 Dica: nunca compartilhe sua senha com ninguém.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="secao">
+        <h2><i class="fas fa-wallet icone"></i>2. Ver saldo e extrato</h2>
+        <div class="conteudo">
+          <div class="texto">
+            <p>Na tela inicial, já aparece seu saldo. Toque para ver o extrato detalhado.</p>
+            <div class="destaque">📅 Veja todas as movimentações por dia.</div>
+          </div>
+          <img src="https://via.placeholder.com/280x500?text=Saldo+e+extrato" alt="Saldo e Extrato">
+        </div>
+      </div>
+
+      <div class="secao">
+        <h2><i class="fas fa-exchange-alt icone"></i>3. Fazer Pix</h2>
+        <div class="conteudo">
+          <img src="https://via.placeholder.com/280x500?text=Transferência+Pix" alt="Fazer Pix">
+          <div class="texto">
+            <p>Toque em <strong>Pix</strong>, escolha a chave (CPF, telefone, etc.), digite o valor e confirme com senha.</p>
+            <div class="destaque">⚡ O Pix cai na hora!</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="secao">
+        <h2><i class="fas fa-barcode icone"></i>4. Pagar boletos</h2>
+        <div class="conteudo">
+          <div class="texto">
+            <p>Use a câmera do celular para escanear o código de barras ou cole o número manualmente.</p>
+            <div class="destaque">📄 Ideal para contas de água, luz, telefone e boletos online.</div>
+          </div>
+          <img src="https://via.placeholder.com/280x500?text=Pagar+boleto" alt="Pagamento de boleto">
+        </div>
+      </div>
+
+      <div class="secao">
+        <h2><i class="fas fa-credit-card icone"></i>5. Cartão virtual</h2>
+        <div class="conteudo">
+          <img src="https://via.placeholder.com/280x500?text=Cartão+virtual" alt="Cartão virtual">
+          <div class="texto">
+            <p>Na área “Cartões”, ative o cartão virtual para usar em compras online com mais segurança.</p>
+            <div class="destaque">💳 O número é diferente do cartão físico.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="secao">
+        <h2><i class="fas fa-shield-alt icone"></i>6. Dicas de segurança</h2>
+        <div class="conteudo">
+          <div class="texto">
+            <ul>
+              <li>✅ Nunca passe sua senha ou código do banco a ninguém</li>
+              <li>✅ Evite usar o app em Wi-Fi público</li>
+              <li>✅ Ative a verificação em duas etapas</li>
+              <li>✅ Use biometria sempre que possível</li>
+            </ul>
+          </div>
+          <img src="https://via.placeholder.com/280x500?text=Segurança+digital" alt="Segurança digital">
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  &copy; 2025 - Guia Bancário Digital. Material educativo.
+</footer>
+
+<script>
+  function mudarTab(indice) {
+    const slider = document.getElementById('slider');
+    const buttons = document.querySelectorAll('.tab-btn');
+    slider.style.transform = `translateX(-${indice * 100}%)`;
+    buttons.forEach((btn, i) => {
+      btn.classList.toggle('active', i === indice);
+    });
+  }
+</script>
+
+<!-- Script do VLibras -->
+
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget();
+</script>
+
+</body>
+</html>
